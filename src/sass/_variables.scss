@@ -1,1 +1,48 @@
-// Переменные цветов, шрифты и т.п.
+$colors: (
+  'accent': #d41443,
+  //Лого, bg кнопок, текст светлых кнопок, заголовки, ховер текста в навигации,большие цифры, ховер иконок соцсетей,
+  //Тел в футере, стрелочки в кнопках
+  'heroBgc': #ffb8ca,
+  //Фон героя и первой колонки Products
+  'circleBgc': #ffa5ba,
+  //Круг за мороженком
+  'primaryBgc': #fff5f6,
+  //Фон секций - розовый
+  'secondaryBgc': #ffffff,
+  //Фон секций - белый
+  'menuBgc': #e17992,
+  //Фон мобильного меню
+  'sliderBgc': #fafafa,
+  //Фон под отзывами на слайдере
+  'alternateBgc': #f0d1a5,
+  //Фон под второй колонкой Products, фон заголовков в контактах
+  'additionalBgc': #c2e297,
+  //Фон под третьей колонкой Products, фон заголовков в контактах
+  'titleText': #d41443,
+  //Заголовки = акцент
+  'secondarytitleText': #ffa5ba,
+  //Лейбл заголовков, время работы в контактах
+  'primaryText': #907e82,
+  //Основной цвет текста - body
+  'secondaryText': #ffffff,
+  //Белый текст
+  'additionalText': #000000,
+  //Черный текст
+  'iconColor': #fea5bb,
+  //Иконки
+  'iconHoverColor': #d41443,
+  //Ховер иконок = акцент
+  'darkbuttonColor': #d41443,
+  //Главная кнопка = акцент
+  'darkbuttonHoverColor': #c7133e,
+  //Ховер главной кнопки
+  'lightbuttonColor': #ffffff,
+  //Светлая кнопка
+  'lightbuttonHoverColor': #ecebeb,
+  //Ховер светлой кнопки
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+// Как записать цвет - пример
+// color: getColor('secondaryText');
