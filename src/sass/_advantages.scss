@@ -1,0 +1,79 @@
+.advantages {
+  padding-bottom: 97px;
+  background-color: getColor('primaryBgc');
+}
+.advantages__set {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: -30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: -45px;
+  }
+}
+.advantages__item {
+  display: inline-block;
+  max-width: 230px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 60px) / 3);
+    max-width: 180px;
+    margin: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 3 * 90px) / 3);
+    max-width: 330px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url(../images/advantages/dug-glass.png);
+  }
+  &:nth-child(2)::before {
+    background-image: url(../images/advantages/apple-glass.png);
+  }
+  &:nth-child(3)::before {
+    background-image: url(../images/advantages/heart-candy.png);
+  }
+}
+.advantages__number {
+  display: block;
+  margin-bottom: 20px;
+  font-family: Titan One, cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: getColor('titleText');
+}
+.advantages__text {
+  display: block;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  color: getColor('additionalText');
+}
