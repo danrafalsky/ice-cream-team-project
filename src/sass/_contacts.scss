@@ -1,0 +1,42 @@
+// .footer__button {
+//   margin: 0 auto;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   cursor: pointer;
+
+//   font-family: DM Sans, sans-serif;
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.31;
+
+//   width: 161px;
+//   height: 44px;
+
+//   border: none;
+//   border-radius: 22px;
+
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &--dark {
+//     background-color: getColor('darkbuttonColor');
+//     color: getColor('secondaryText');
+//   }
+
+//   &--dark:hover,
+//   &--dark:focus {
+//     background-color: getColor('darkbuttonHoverColor');
+//   }
+//   &--light {
+//     margin-top: 10px;
+//     margin-bottom: 113px;
+//     background-color: getColor('lightbuttonColor');
+//     color: getColor('accent');
+//   }
+//   &--light:hover,
+//   &--light:focus {
+//     background-color: getColor('lightbuttonHoverColor');
+//   }
+// }
