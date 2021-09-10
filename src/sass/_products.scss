@@ -1,0 +1,166 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+}
+
+//Заголовки
+.products__label {
+  margin-bottom: 15px;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor('circleBgc');
+}
+.products__title {
+  margin-bottom: 144px;
+  font-family: Titan One;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('accent');
+}
+
+//Карточки
+.products__item {
+  position: relative;
+  padding-bottom: 60px;
+  min-height: 440px;
+  text-align: center;
+  border-radius: 24px;
+  &::before {
+    position: absolute;
+    width: 249px;
+    height: 252px;
+    top: 0;
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//Картинки в карточках
+.icecream-card {
+  background-color: getColor('heroBgc');
+  &::before {
+    background-image: url(../images/products/icecream-products-mobile@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products/icecream-products-mobile@2x.png);
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url(../images/products/icecream-products-mobile@3x.png);
+    }
+  }
+}
+.icecoffee-card {
+  background-color: getColor('alternateBgc');
+  margin-top: 130px;
+  &::before {
+    background-image: url(../images/products/icecoffee-products-mobile@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products/icecoffee-products-mobile@2x.png);
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url(../images/products/icecoffee-products-mobile@3x.png);
+    }
+  }
+}
+.milkshakes-card {
+  background-color: getColor('additionalBgc');
+  margin-top: 146px;
+  &::before {
+    background-image: url(../images/products/milkshakes-products-mobile@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products/milkshakes-products-mobile@2x.png);
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url(../images/products/milkshakes-products-mobile@3x.png);
+    }
+  }
+}
+.products__subtitle {
+  padding-top: 161px;
+  margin-bottom: 30px;
+  font-family: Titan One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('secondaryText');
+}
+.products__text {
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: getColor('secondaryText');
+}
+
+//Стилизация кнопок
+.products__btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: unset;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 0;
+  bottom: 30px;
+  text-align: center;
+  background-color: getColor('lightbuttonColor');
+
+  //Добавила ховер и фокус на кнопки
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.products__icon {
+  position: absolute;
+  transform: translate(-75%, -75%);
+  fill: getColor('darkbuttonColor');
+}
+
+//Cтилизация точек
+.products__dots {
+  display: block;
+  margin: 0 auto 18px auto;
+  position: relative;
+  background-color: getColor('secondaryBgc');
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  font-size: 0;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: -10px;
+    border-radius: 50%;
+    font-size: 0;
+    background-color: getColor('secondaryBgc');
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: getColor('secondaryBgc');
+    border-radius: 50%;
+    font-size: 0;
+    left: 10px;
+  }
+}
