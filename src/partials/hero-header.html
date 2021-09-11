@@ -1,1 +1,130 @@
+<header class="header">
+  <div class="container header__container">
+    <nav class="nav">
+      <a href="./index.html" class="logo">
+        <img src="./images/hero-header/icecream-logo@1x.png" alt="Логотип компании" width="199"
+      /></a>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link nav__link--current">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">How it’s made?</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Our products</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+    <button
+      type="button"
+      class="menu-button js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="menu-icon" width="25" height="25" aria-label="Переключатель мобильного меню">
+        <use href="./images/icons.svg#burger"></use>
+      </svg>
+    </button>
 
+    <button type="button" class="btn header__btn">
+      Buy now
+      <svg class="btn__icon" width="16" height="16" aria-label="Кнопка для оформеления покупки">
+        <use href="./images/icons.svg#arrow-ios-right"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero__container">
+      <div class="hero__container--decoration"></div>
+      <div class="hero__container--icecream">
+        <picture>
+          <source
+            srcset="
+              ./images/hero-header/icecream-hero-desktop@1x.png 1x,
+              ./images/hero-header/icecream-hero-desktop@2x.png 2x,
+              ./images/hero-header/icecream-hero-desktop@3x.png 3x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/icecream-hero-tablet@1x.png 1x,
+              ./images/hero-header/icecream-hero-tablet@2x.png 2x,
+              ./images/hero-header/icecream-hero-tablet@3x.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/icecream-hero-mobile@1x.png 1x,
+              ./images/hero-header/icecream-hero-mobile@2x.png 2x,
+              ./images/hero-header/icecream-hero-mobile@3x.png 3x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/hero-header/icecream-hero-desktop@1x.png" alt="Мороженное" />
+        </picture>
+      </div>
+      <div class="hero__container--milk">
+        <picture>
+          <source
+            srcset="
+              ./images/hero-header/milk-hero-desktop@1x.png 1x,
+              ./images/hero-header/milk-hero-desktop@2x.png 2x,
+              ./images/hero-header/milk-hero-desktop@3x.png 3x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/milk-hero-tablet@1x.png 1x,
+              ./images/hero-header/milk-hero-tablet@2x.png 2x,
+              ./images/hero-header/milk-hero-tablet@3x.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <img src="./images/hero-header/milk-hero-desktop@1x.png" alt="Мороженное" />
+        </picture>
+      </div>
+      <div class="hero__container--info">
+        <p class="hero__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button type="button" class="btn hero__btn--next">
+          <img src="./images/hero-header/arrow-right.png" alt="Логотип компании" width="199" />
+        </button>
+      </div>
+      <div class="hero__container--tasty">
+        <picture>
+          <source
+            srcset="
+              ./images/hero-header/tasty-hero-desktop@1x.png 1x,
+              ./images/hero-header/tasty-hero-desktop@2x.png 2x,
+              ./images/hero-header/tasty-hero-desktop@3x.png 3x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/tasty-hero-tablet@1x.png 1x,
+              ./images/hero-header/tasty-hero-tablet@2x.png 2x,
+              ./images/hero-header/tasty-hero-tablet@3x.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <img src="./images/hero-header/tasty-hero-desktop@1x.png" alt="Девушка есть мороженное" />
+        </picture>
+      </div>
+      <div class="hero__container--title">
+        <h1 class="hero__title">
+          ice cream<br />
+          made with<br />
+          <span class="hero__title--accent">passion</span>
+        </h1>
+        <a class="btn hero__btn hero__btn--dark" href="#">Products</a>
+        <a class="btn hero__btn hero__btn--light" href="#">How it’s made?</a>
+      </div>
+    </div>
+  </section>
+</main>
