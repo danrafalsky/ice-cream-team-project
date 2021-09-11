@@ -1,9 +1,16 @@
 <header class="header">
   <div class="container header__container">
-    <nav>
+    <nav class="nav">
       <a href="./index.html" class="logo">
         <img src="./images/hero-header/icecream-logo@1x.png" alt="Логотип компании" width="199"
       /></a>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link nav__link--current">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">How it’s made?</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Our products</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+      </ul>
     </nav>
     <button
       type="button"
@@ -29,7 +36,7 @@
   <section class="hero">
     <div class="container hero__container">
       <div class="hero__container--decoration"></div>
-      <div class="hero_container--img">
+      <div class="hero__container--icecream">
         <picture>
           <source
             srcset="
@@ -56,6 +63,57 @@
             media="(max-width:767px)"
           />
           <img src="./images/hero-header/icecream-hero-desktop@1x.png" alt="Мороженное" />
+        </picture>
+      </div>
+      <div class="hero__container--milk">
+        <picture>
+          <source
+            srcset="
+              ./images/hero-header/milk-hero-desktop@1x.png 1x,
+              ./images/hero-header/milk-hero-desktop@2x.png 2x,
+              ./images/hero-header/milk-hero-desktop@3x.png 3x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/milk-hero-tablet@1x.png 1x,
+              ./images/hero-header/milk-hero-tablet@2x.png 2x,
+              ./images/hero-header/milk-hero-tablet@3x.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <img src="./images/hero-header/milk-hero-desktop@1x.png" alt="Мороженное" />
+        </picture>
+      </div>
+      <div class="hero__container--info">
+        <p class="hero__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button type="button" class="btn hero__btn--next">
+          <img src="./images/hero-header/arrow-right.png" alt="Логотип компании" width="199" />
+        </button>
+      </div>
+      <div class="hero__container--tasty">
+        <picture>
+          <source
+            srcset="
+              ./images/hero-header/tasty-hero-desktop@1x.png 1x,
+              ./images/hero-header/tasty-hero-desktop@2x.png 2x,
+              ./images/hero-header/tasty-hero-desktop@3x.png 3x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/tasty-hero-tablet@1x.png 1x,
+              ./images/hero-header/tasty-hero-tablet@2x.png 2x,
+              ./images/hero-header/tasty-hero-tablet@3x.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <img src="./images/hero-header/tasty-hero-desktop@1x.png" alt="Девушка есть мороженное" />
         </picture>
       </div>
       <div class="hero__container--title">
