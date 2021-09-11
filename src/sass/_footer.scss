@@ -1,62 +1,31 @@
 .footer {
   background-color: getColor('primaryBgc');
 }
-.footer__button {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  cursor: pointer;
-
-  font-family: DM Sans, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-
-  width: 161px;
-  height: 44px;
-
-  border: none;
-  border-radius: 22px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &--dark {
-    background-color: getColor('darkbuttonColor');
-    color: getColor('secondaryText');
+.footer__container {
+  padding-top: 57px;
+  padding-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    padding-top: 79px;
+    padding-bottom: 91px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
-
-  &--dark:hover,
-  &--dark:focus {
-    background-color: getColor('darkbuttonHoverColor');
-  }
-  &--light {
-    margin-top: 10px;
-    margin-bottom: 113px;
-    background-color: getColor('lightbuttonColor');
-    color: getColor('accent');
-  }
-  &--light:hover,
-  &--light:focus {
-    background-color: getColor('lightbuttonHoverColor');
-  }
-}
-.footer__icon {
-  margin-left: 10px;
-
-  &--dark {
-    fill: getColor('accent');
-    stroke: getColor('accent');
-  }
-
-  &--light {
-    fill: #fff;
-    stroke: #fff;
+  @media screen and (min-width: 1280px) {
+    padding-top: 83px;
+    padding-bottom: 97px;
   }
 }
 
+.footer__title {
+  width: 230px;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 50%;
+  }
+}
 .footer__heading {
   font-family: Titan One, cursive;
   font-style: normal;
@@ -64,10 +33,23 @@
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
+  text-align: left;
 
   color: getColor('secondarytitleText');
 
   margin-bottom: 17px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 15px;
+  }
 }
 .footer__caption {
   font-family: Titan One, cursive;
@@ -81,14 +63,32 @@
   color: getColor('titleText');
 
   margin-bottom: 43px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
 }
 .networks {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 46px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
 
   &__item:not(:last-child) {
-    margin-right: 28.2px;
+    margin-right: 28px;
+    @media screen and (min-width: 768px) {
+      margin-right: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 25px;
+    }
   }
   &__link {
     display: flex;
@@ -98,28 +98,36 @@
     height: 32px;
     border-radius: 50%;
     background-color: #fea5bb;
-    // fill: fff;
+
     transition: background-color 250ms linear;
     &:hover,
     &:focus {
       background-color: #d41443;
     }
+    @media screen and (min-width: 768px) {
+      width: 34px;
+      height: 34px;
+    }
   }
 }
-.networks__icon {
-  fill: fff;
-}
+
 .footer__contacts {
-  margin-bottom: 43px;
   font-family: DM Sans, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
-
+  letter-spacing: 0.02em;
   text-align: right;
 
   color: #000;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 .footer__tel {
   color: #d41443;
@@ -131,6 +139,7 @@
 
   border-top: 1px solid #e1e1e1;
   height: 89px;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: center;
@@ -148,9 +157,9 @@
   line-height: 1.52;
   letter-spacing: 0.02em;
   text-align: center;
+  color: #907e82;
+
   @media screen and (min-width: 768px) {
     line-height: 1.86;
   }
-
-  color: #907e82;
 }
