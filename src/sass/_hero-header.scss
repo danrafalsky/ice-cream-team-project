@@ -8,20 +8,63 @@
     display: flex;
     align-items: center;
     padding-top: 6px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 37px;
-    padding-left: 34px;
-    padding-right: 34px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 37px;
+      padding-left: 34px;
+      padding-right: 34px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-left: 46px;
+      padding-right: 115px;
+    }
   }
 
-  @media screen and (min-width: 1280px) {
-    padding-left: 46px;
-    padding-right: 115px;
+  .nav {
+    display: flex;
+    align-items: center;
+    &__list {
+      display: none;
+
+      @media screen and (min-width: 1280px) {
+        display: flex;
+      }
+
+      margin-left: 110px;
+    }
+
+    &__link {
+      font-family: DM Sans, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.31;
+
+      color: getColor('secondaryText');
+    }
+
+    &__link--current {
+      color: getColor('accent');
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 
   &__btn {
     display: none;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: auto;
+    }
 
     justify-content: center;
     align-items: center;
@@ -36,11 +79,17 @@
     background-color: getColor('lightbuttonColor');
     color: getColor('accent');
 
-    padding: 14px 37px;
+    padding: 12px 37px;
     min-width: 160px;
 
-    @media screen and (min-width: 768px) {
-      display: flex;
+    border: none;
+    border-radius: 22px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: getColor('lightbuttonHoverColor');
     }
   }
 }
@@ -53,6 +102,13 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .btn__icon {
@@ -123,6 +179,16 @@
   &__container--title {
     position: absolute;
     top: 193px;
+
+    @media screen and (min-width: 768px) {
+      top: 102px;
+      left: 34px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: 171px;
+      left: 115px;
+    }
   }
 
   &__container--decoration {
@@ -150,7 +216,7 @@
     }
   }
 
-  &_container--img {
+  &__container--icecream {
     position: absolute;
     bottom: 0;
     left: 117px;
@@ -167,8 +233,94 @@
     }
   }
 
+  &__container--milk {
+    display: none;
+    position: absolute;
+    width: 124px;
+    left: 34px;
+    bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 188px;
+      left: 77px;
+      bottom: 45px;
+    }
+  }
+
+  &__container--tasty {
+    display: none;
+    position: absolute;
+    width: 168px;
+    left: 566px;
+    bottom: 0;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 293px;
+      left: 878px;
+      bottom: 0px;
+    }
+  }
+
+  &__container--info {
+    display: none;
+    position: absolute;
+
+    left: 154px;
+    bottom: 34px;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 295px;
+      bottom: 56px;
+    }
+  }
+
+  &__subtitle {
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: getColor('secondaryText');
+
+    width: 114px;
+    height: 48px;
+
+    @media screen and (min-width: 1280px) {
+      width: 200px;
+      height: 78px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    margin-bottom: 7px;
+  }
+
+  &__btn--next {
+    cursor: pointer;
+    width: 18px;
+    border-radius: 50%;
+
+    @media screen and (min-width: 1280px) {
+      width: 26px;
+    }
+  }
+
   &__btn {
     cursor: pointer;
+
+    float: left;
 
     font-family: DM Sans, sans-serif;
     font-style: normal;
@@ -192,7 +344,6 @@
   }
 
   &__btn--dark {
-    float: left;
     margin-right: 8px;
 
     background-color: getColor('darkbuttonColor');
