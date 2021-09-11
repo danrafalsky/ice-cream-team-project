@@ -1,1 +1,220 @@
+// _____________________________________________________________HEADER______________________________________________
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
 
+  &__container {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 46px;
+    padding-right: 115px;
+  }
+
+  &__btn {
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    background-color: getColor('lightbuttonColor');
+    color: getColor('accent');
+
+    padding: 14px 37px;
+    min-width: 160px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+}
+
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn__icon {
+  fill: getColor('accent');
+  margin-left: 8px;
+}
+.menu-icon {
+  fill: getColor('accent');
+}
+
+// ____________________________________________________________HERO____________________________________________________________
+.hero {
+  background-color: getColor('heroBgc');
+
+  &__container {
+    min-height: 502px;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      min-height: 399px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      min-height: 665px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 19px;
+
+    font-family: Titan One, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: getColor('secondaryBgc');
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+      line-height: 1.14;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 38px;
+      line-height: 1.16;
+    }
+  }
+  &__title--accent {
+    font-size: 48px;
+    line-height: 0.96;
+    color: getColor('accent');
+
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: 0.91;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 0.9;
+    }
+  }
+
+  &__container--title {
+    position: absolute;
+    top: 193px;
+  }
+
+  &__container--decoration {
+    position: absolute;
+    top: 83px;
+    left: 36px;
+
+    background-color: getColor('circleBgc');
+    border-radius: 50%;
+    width: 346px;
+    height: 344px;
+
+    @media screen and (min-width: 768px) {
+      top: 31px;
+      left: 307px;
+      width: 324px;
+      height: 322px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: 52px;
+      left: 475px;
+      width: 538px;
+      height: 538px;
+    }
+  }
+
+  &_container--img {
+    position: absolute;
+    bottom: 0;
+    left: 117px;
+    width: 171px;
+
+    @media screen and (min-width: 768px) {
+      width: 143px;
+      left: 378px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 236px;
+      left: 594px;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+
+    padding: 7px 21px;
+
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.29;
+      padding: 7px 33px;
+    }
+  }
+
+  &__btn--dark {
+    float: left;
+    margin-right: 8px;
+
+    background-color: getColor('darkbuttonColor');
+    color: getColor('secondaryText');
+
+    &:hover,
+    &:focus {
+      background-color: getColor('darkbuttonHoverColor');
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 15px;
+    }
+  }
+
+  &__btn--light {
+    background-color: getColor('lightbuttonColor');
+    color: getColor('accent');
+
+    &:hover,
+    &:focus {
+      background-color: getColor('lightbuttonHoverColor');
+    }
+  }
+}
