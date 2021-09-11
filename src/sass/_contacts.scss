@@ -1,0 +1,187 @@
+.contacts {
+  background: linear-gradient(getColor('secondaryBgc') 84px, getColor('primaryBgc') 84px);
+}
+
+.contacts__overlay {
+  background-image: url(../images/contacts/drops-bg-contacts.png);
+  background-repeat: no-repeat;
+  background-position: top 100px right;
+  background-size: contain;
+}
+
+.contacts__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 54px;
+}
+
+.contacts__item {
+  max-width: 220px;
+  padding: 43px 20px;
+  margin-bottom: 20px;
+
+  background-color: getColor('secondaryBgc');
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+// .contacts__container {
+//   padding-left: 50px;
+//   padding-right: 50px;
+// }
+
+.contacts__label--primary {
+  width: 80px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+
+  background-color: getColor('alternateBgc');
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('secondaryText');
+}
+
+.contacts__label--secondary {
+  width: 130px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+
+  background-color: getColor('additionalBgc');
+
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: getColor('secondaryText');
+}
+
+.contacts__city {
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: getColor('additionalText');
+}
+
+.contacts__text {
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: getColor('primaryText');
+
+  margin-bottom: 25px;
+}
+
+.contacts__table {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts__table-row {
+  margin-bottom: 10px;
+}
+
+.contacts__weekdays {
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: getColor('additionalText');
+}
+
+.contacts__time {
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: normal;
+  color: getColor('circleBgc');
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: getColor('primaryText');
+
+  &:hover,
+  &:focus {
+    color: getColor('additionalText');
+  }
+}
+
+.contacts__button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  font-family: DM Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  width: 161px;
+  height: 44px;
+
+  border: none;
+  border-radius: 22px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--red {
+    background-color: getColor('darkbuttonColor');
+    color: getColor('secondaryText');
+  }
+
+  &--red:hover,
+  &--red:focus {
+    background-color: getColor('darkbuttonHoverColor');
+  }
+  &--white {
+    margin-top: 10px;
+    margin-bottom: 113px;
+    background-color: getColor('lightbuttonColor');
+    color: getColor('accent');
+  }
+  &--white:hover,
+  &--white:focus {
+    background-color: getColor('lightbuttonHoverColor');
+  }
+}
+.contacts__icon {
+  margin-left: 10px;
+
+  &--red {
+    fill: getColor('accent');
+    stroke: getColor('accent');
+  }
+
+  &--white {
+    fill: #fff;
+    stroke: #fff;
+  }
+}
