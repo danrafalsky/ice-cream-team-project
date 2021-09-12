@@ -42,7 +42,7 @@
       <!-- _____________фон мороженного__________ -->
       <div class="hero__container--decoration"></div>
       <!-- _____________фото мороженного__________ -->
-      <div class="hero__container--icecream">
+      <div class="hero__container--icecream music1">
         <picture>
           <source
             srcset="
@@ -72,7 +72,7 @@
         </picture>
       </div>
       <!-- _____________фото молока__________ -->
-      <div class="hero__container--milk">
+      <div class="hero__container--milk music3">
         <picture>
           <source
             srcset="
@@ -106,7 +106,7 @@
         </button>
       </div>
       <!-- _____________фото девушка с мороженным__________ -->
-      <div class="hero__container--tasty">
+      <div class="hero__container--tasty music2">
         <picture>
           <source
             srcset="
@@ -146,6 +146,23 @@
         <dd class="statistics__subitem">food trucks</dd>
       </dl>
     </div>
+    <!-- __________аудио для мороженки-->
+    <audio id="sound-link" preload="auto">
+      <source src="audio/ice_cream_and_cake.mp3" type="audio/mpeg" />
+      <source src="audio/ice_cream_and_cake.ogg" type="audio/ogg" />
+      <source src="audio/ice_cream_and_cake.wav" type="audio/wav" />
+    </audio>
+    <!-- __________аудио для девочки-->
+    <audio id="sound-link2" preload="auto">
+      <source src="audio/mmm_mmm_mwha.mp3" type="audio/mpeg" />
+      <source src="audio/mmm_mmm_mwha.ogg" type="audio/ogg" />
+      <source src="audio/mmm_mmm_mwha.wav" type="audio/wav" />
+    </audio>
+    <audio id="sound-link3" preload="auto">
+      <source src="audio/water.mp3" type="audio/mpeg" />
+      <source src="audio/water.ogg" type="audio/ogg" />
+      <source src="audio/water.wav" type="audio/wav" />
+    </audio>
   </section>
 </main>
 <!-- скрипт мобильного меню -->
@@ -156,3 +173,22 @@
   crossorigin="anonymous"
 ></script>
 <script defer src="js/mobile-menu.js"></script>
+<!-- скрипт аудио -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  var soundLink = $('#sound-link')[0],
+    soundLink2 = $('#sound-link2')[0],
+    soundLink3 = $('#sound-link3')[0];
+  $('.music1 img').mouseenter(function () {
+    soundLink.play();
+  });
+
+  $('.music2 img').mouseenter(function () {
+    soundLink2.play();
+  });
+
+  $('.music3 img').mouseenter(function () {
+    soundLink3.play();
+  });
+</script>
