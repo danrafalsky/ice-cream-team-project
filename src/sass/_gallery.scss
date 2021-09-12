@@ -1,0 +1,8 @@
+.gallery {
+background-image: linear-gradient(to bottom, getColor('primaryBgc')40%, getColor('secondaryBgc')40%);
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
