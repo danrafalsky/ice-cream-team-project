@@ -1,17 +1,20 @@
 <header class="header">
   <div class="container header__container">
     <nav class="nav">
+      <!-- _____________логотип__________ -->
       <a href="./index.html" class="logo">
         <img src="./images/hero-header/icecream-logo@1x.png" alt="Логотип компании" width="199"
       /></a>
+      <!-- _____________навигация по сайту__________ -->
       <ul class="nav__list">
         <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
         <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
         <li class="nav__item"><a href="#" class="nav__link">How it’s made?</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Our products</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link">Contact</a></li>
       </ul>
     </nav>
+    <!-- _____________кнопка мобильного меню__________ -->
     <button
       type="button"
       class="menu-btn menu-button--open js-open-menu"
@@ -22,7 +25,7 @@
         <use href="./images/icons.svg#burger"></use>
       </svg>
     </button>
-
+    <!-- _____________кнопка купить__________ -->
     <button type="button" class="btn header__btn">
       Buy now
       <svg class="btn__icon" width="16" height="16" aria-label="Кнопка для оформеления покупки">
@@ -36,7 +39,9 @@
   <!-- ________________________________________HERO______________________________ -->
   <section class="hero">
     <div class="container hero__container">
+      <!-- _____________фон мороженного__________ -->
       <div class="hero__container--decoration"></div>
+      <!-- _____________фото мороженного__________ -->
       <div class="hero__container--icecream">
         <picture>
           <source
@@ -66,6 +71,7 @@
           <img src="./images/hero-header/icecream-hero-desktop@1x.png" alt="Мороженное" />
         </picture>
       </div>
+      <!-- _____________фото молока__________ -->
       <div class="hero__container--milk">
         <picture>
           <source
@@ -87,6 +93,7 @@
           <img src="./images/hero-header/milk-hero-desktop@1x.png" alt="Мороженное" />
         </picture>
       </div>
+      <!-- _____________какая-то информация__________ -->
       <div class="hero__container--info">
         <p class="hero__subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -98,6 +105,7 @@
           </svg>
         </button>
       </div>
+      <!-- _____________фото девушка с мороженным__________ -->
       <div class="hero__container--tasty">
         <picture>
           <source
@@ -119,6 +127,7 @@
           <img src="./images/hero-header/tasty-hero-desktop@1x.png" alt="Девушка есть мороженное" />
         </picture>
       </div>
+      <!-- _____________заголовок__________ -->
       <div class="hero__container--title">
         <h1 class="hero__title">
           ice cream<br />
@@ -128,6 +137,14 @@
         <a class="btn hero__btn hero__btn--dark" href="#">Products</a>
         <a class="btn hero__btn hero__btn--light" href="#">How it’s made?</a>
       </div>
+
+      <!-- _____________статистика__________ -->
+      <dl class="hero__statistics statistics">
+        <dt class="statistics__item">16</dt>
+        <dd class="statistics__subitem">cafes</dd>
+        <dt class="statistics__item">23</dt>
+        <dd class="statistics__subitem">food trucks</dd>
+      </dl>
     </div>
   </section>
 </main>
