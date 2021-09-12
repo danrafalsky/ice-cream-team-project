@@ -960,6 +960,9 @@ ul {
   padding: 0 15px;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms linear;
+  transition: opacity 250ms linear, -webkit-transform 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear;
   transition: transform 250ms linear, opacity 250ms linear, -webkit-transform 250ms linear;
   color: #ffffff;
 }

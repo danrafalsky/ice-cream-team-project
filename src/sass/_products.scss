@@ -316,7 +316,7 @@
   padding: 0 15px;
   opacity: 0;
   visibility: hidden;
-  transition: transform 250ms linear, opacity 250ms linear, -webkit-transform 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear;
   color: getColor('secondaryText');
   @media screen and (min-width: 768px) {
     width: 210px;
