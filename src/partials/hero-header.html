@@ -5,7 +5,7 @@
         <img src="./images/hero-header/icecream-logo@1x.png" alt="Логотип компании" width="199"
       /></a>
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link nav__link--current">Home</a></li>
+        <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
         <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
         <li class="nav__item"><a href="#" class="nav__link">How it’s made?</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Our products</a></li>
@@ -14,7 +14,7 @@
     </nav>
     <button
       type="button"
-      class="menu-button js-open-menu"
+      class="menu-btn menu-button--open js-open-menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
@@ -33,6 +33,7 @@
 </header>
 
 <main>
+  <!-- ________________________________________HERO______________________________ -->
   <section class="hero">
     <div class="container hero__container">
       <div class="hero__container--decoration"></div>
@@ -91,8 +92,10 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="btn hero__btn--next">
-          <img src="./images/hero-header/arrow-right.png" alt="Логотип компании" width="199" />
+        <button class="hero__btn--slider" type="button">
+          <svg class="hero__btn--icon" width="16px" height="12px">
+            <use href="./images/icons.svg#arrow-right"></use>
+          </svg>
         </button>
       </div>
       <div class="hero__container--tasty">
@@ -128,3 +131,11 @@
     </div>
   </section>
 </main>
+<!-- скрипт мобильного меню -->
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script>

@@ -11,7 +11,7 @@
 
   z-index: 999;
 
-  transform: translateX(100%);
+  transform: translateX(-300%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &.is-open {
