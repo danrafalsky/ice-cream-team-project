@@ -54,13 +54,31 @@
   }
 
   &:nth-child(1)::before {
-    background-image: url(../images/advantages/dug-glass.png);
+    background-image: url(../images/advantages/dug-glass@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/dug-glass@2x.png);
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url(../images/advantages/dug-glass@3x.png);
+    }
   }
   &:nth-child(2)::before {
-    background-image: url(../images/advantages/apple-glass.png);
+    background-image: url(../images/advantages/apple-glass@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/apple-glass@2x.png);
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url(../images/advantages/apple-glass@3x.png);
+    }
   }
   &:nth-child(3)::before {
-    background-image: url(../images/advantages/heart-candy.png);
+    background-image: url(../images/advantages/heart-candy@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/heart-candy@2x.png);
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      background-image: url(../images/advantages/heart-candy@3x.png);
+    }
   }
 }
 .advantages__number {
