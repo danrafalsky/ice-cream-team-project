@@ -1,4 +1,4 @@
-<!------- Contacts ---------------------------------------------------------------------------------------------------->
+<!------ Contacts ---------------------------------------------------------------------------------------------------->
 
 <section class="contacts" id="contacts">
 
@@ -18,14 +18,16 @@
                             <p class="contacts__weekdays">Monday - Friday</p>
                             <p class="contacts__time">06:00 AM - 10:00 PM</p>
                         </div>
-                       
+
                         <p class="contacts__weekdays">Saturday - Sunday</p>
                         <p class="contacts__time">08:00 AM - 16:00 PM</p>
                     </div>
 
                     <address class="contacts__address contacts__link">
-                        <a class="contacts__link" href="tel:+610383766284" class="contacts__contact-phone">+61(0) 383 766 284</a>
-                        <a class="contacts__link" href="mailto:noreply@envato.com" class="contacts__contact-email">noreply@envato.com</a>
+                        <a class="contacts__link" href="tel:+610383766284" class="contacts__contact-phone">+61(0) 383
+                            766 284</a>
+                        <a class="contacts__link" href="mailto:noreply@envato.com"
+                            class="contacts__contact-email">noreply@envato.com</a>
                     </address>
                 </li>
 
@@ -44,8 +46,10 @@
                     </div>
 
                     <address class="contacts__address contacts__link">
-                        <a class="contacts__link" href="tel:+610383766284" class="contacts__contact-phone">+61(0) 383 766 284</a>
-                        <a class="contacts__link" href="mailto:noreply@envato.com" class="contacts__contact-email">noreply@envato.com</a>
+                        <a class="contacts__link" href="tel:+610383766284" class="contacts__contact-phone">+61(0) 383
+                            766 284</a>
+                        <a class="contacts__link" href="mailto:noreply@envato.com"
+                            class="contacts__contact-email">noreply@envato.com</a>
                     </address>
                 </li>
 
@@ -64,8 +68,10 @@
                     </div>
 
                     <address class="contacts__address contacts__link">
-                        <a class="contacts__link" href="tel:+610383766284" class="contacts__contact-phone">+61(0) 383 766 284</a>
-                        <a class="contacts__link" href="mailto:noreply@envato.com" class="contacts__contact-email">noreply@envato.com</a>
+                        <a class="contacts__link" href="tel:+610383766284" class="contacts__contact-phone">+61(0) 383
+                            766 284</a>
+                        <a class="contacts__link" href="mailto:noreply@envato.com"
+                            class="contacts__contact-email">noreply@envato.com</a>
                     </address>
                 </li>
             </ul>
@@ -73,31 +79,51 @@
 
         <div class="box-buttons">
 
-            <button class="contacts__button contacts__button--red" type="button" data-modal-open>Our location
-                    <svg class="contacts__icon contacts__icon--white" width="20" height="20">
-                        <use href="./images/icons.svg#arrow-ios-right"></use>
-                    </svg>
-                </button>
-                <button class="contacts__button contacts__button--white" type="button">Franshise
-                    <svg class="contacts__icon contacts__icon--red" width="20" height="20">
-                        <use href="./images/icons.svg#arrow-ios-right"></use>
-                    </svg>
-                </button>
+            <button class="contacts__button contacts__button--red" type="button" data-modal-contacts-open>Our location
+                <svg class="contacts__icon contacts__icon--white" width="20" height="20">
+                    <use href="./images/icons.svg#arrow-ios-right"></use>
+                </svg>
+            </button>
+            <button class="contacts__button contacts__button--white" type="button">Franshise
+                <svg class="contacts__icon contacts__icon--red" width="20" height="20">
+                    <use href="./images/icons.svg#arrow-ios-right"></use>
+                </svg>
+            </button>
         </div>
 
     </div>
-</section>
 
+</section>
 <!------- Modal window ---------------------------------------------------------------------------------------------------->
 
-<!-- <div class="modal__backdrop is-hidden" data-modal>
-    <div class="modal">
-        <button class="modal__close-button" type="button" aria-label="Кнопка закрытия можального окна" data-modal-close>
-            <svg class="modal__close-icon" width="18" height="18">
+
+<div class="contacts-modal contacts--is-hidden" data-modal-contacts>
+    <div class="contacts-modal__container">
+        <button type="button" class="contacts-modal__button" data-modal-contacts-close>
+            <svg class="contacts-modal__close" width="14" height="14">
                 <use href="./images/icons.svg#close"></use>
             </svg>
         </button>
-    </div>
-</div>
+        <div class="contacts-modal__content">
+            <p class="contatcs-about__section">Location</p>
 
-<script src="./js/modal.js"></script> -->
+
+        </div>
+    </div>
+    <script>
+        (() => {
+            const refs = {
+                openModalBtn: document.querySelector('[data-modal-contacts-open]'),
+                closeModalBtn: document.querySelector('[data-modal-contacts-close]'),
+                modal: document.querySelector('[data-modal-contacts]'),
+            };
+
+            refs.openModalBtn.addEventListener('click', toggleModal);
+            refs.closeModalBtn.addEventListener('click', toggleModal);
+
+            function toggleModal() {
+                refs.modal.classList.toggle('contacts--is-hidden');
+            }
+        })();
+    </script>
+</div>
