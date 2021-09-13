@@ -1,1 +1,194 @@
+<header class="header">
+  <div class="container header__container">
+    <nav class="nav">
+      <!-- _____________логотип__________ -->
+      <a href="./index.html" class="logo">
+        <img src="./images/hero-header/icecream-logo@1x.png" alt="Логотип компании" width="199"
+      /></a>
+      <!-- _____________навигация по сайту__________ -->
+      <ul class="nav__list">
+        <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#customer-reviews" class="nav__link">About us</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">How it’s made?</a></li>
+        <li class="nav__item"><a href="#products" class="nav__link">Our products</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- _____________кнопка мобильного меню__________ -->
+    <button
+      type="button"
+      class="menu-btn menu-button--open js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="menu-icon" width="25" height="25" aria-label="Переключатель мобильного меню">
+        <use href="./images/icons.svg#burger"></use>
+      </svg>
+    </button>
+    <!-- _____________кнопка купить__________ -->
+    <button type="button" class="btn header__btn">
+      Buy now
+      <svg class="btn__icon" width="16" height="16" aria-label="Кнопка для оформеления покупки">
+        <use href="./images/icons.svg#arrow-ios-right"></use>
+      </svg>
+    </button>
+  </div>
+</header>
 
+<main>
+  <!-- ________________________________________HERO______________________________ -->
+  <section class="hero">
+    <div class="container hero__container">
+      <!-- _____________фон мороженного__________ -->
+      <div class="hero__container--decoration"></div>
+      <!-- _____________фото мороженного__________ -->
+      <div class="hero__container--icecream music1">
+        <picture>
+          <source
+            srcset="
+              ./images/hero-header/icecream-hero-desktop@1x.png 1x,
+              ./images/hero-header/icecream-hero-desktop@2x.png 2x,
+              ./images/hero-header/icecream-hero-desktop@3x.png 3x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/icecream-hero-tablet@1x.png 1x,
+              ./images/hero-header/icecream-hero-tablet@2x.png 2x,
+              ./images/hero-header/icecream-hero-tablet@3x.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/icecream-hero-mobile@1x.png 1x,
+              ./images/hero-header/icecream-hero-mobile@2x.png 2x,
+              ./images/hero-header/icecream-hero-mobile@3x.png 3x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/hero-header/icecream-hero-desktop@1x.png" alt="Мороженное" />
+        </picture>
+      </div>
+      <!-- _____________фото молока__________ -->
+      <div class="hero__container--milk music3">
+        <picture>
+          <source
+            srcset="
+              ./images/hero-header/milk-hero-desktop@1x.png 1x,
+              ./images/hero-header/milk-hero-desktop@2x.png 2x,
+              ./images/hero-header/milk-hero-desktop@3x.png 3x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/milk-hero-tablet@1x.png 1x,
+              ./images/hero-header/milk-hero-tablet@2x.png 2x,
+              ./images/hero-header/milk-hero-tablet@3x.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <img src="./images/hero-header/milk-hero-desktop@1x.png" alt="Мороженное" />
+        </picture>
+      </div>
+      <!-- _____________какая-то информация__________ -->
+      <div class="hero__container--info">
+        <p class="hero__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="hero__btn--slider" type="button">
+          <svg class="hero__btn--icon" width="16px" height="12px">
+            <use href="./images/icons.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- _____________фото девушка с мороженным__________ -->
+      <div class="hero__container--tasty music2">
+        <picture>
+          <source
+            srcset="
+              ./images/hero-header/tasty-hero-desktop@1x.png 1x,
+              ./images/hero-header/tasty-hero-desktop@2x.png 2x,
+              ./images/hero-header/tasty-hero-desktop@3x.png 3x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-header/tasty-hero-tablet@1x.png 1x,
+              ./images/hero-header/tasty-hero-tablet@2x.png 2x,
+              ./images/hero-header/tasty-hero-tablet@3x.png 3x
+            "
+            media="(min-width:768px)"
+          />
+          <img src="./images/hero-header/tasty-hero-desktop@1x.png" alt="Девушка есть мороженное" />
+        </picture>
+      </div>
+      <!-- _____________заголовок и кнопки__________ -->
+      <div class="hero__container--title">
+        <h1 class="hero__title">
+          ice cream<br />
+          made with<br />
+          <span class="hero__title--accent">passion</span>
+        </h1>
+        <a class="btn hero__btn hero__btn--dark" href="#products">Products</a>
+        <a class="btn hero__btn hero__btn--light" href="#about">How it’s made?</a>
+      </div>
+
+      <!-- _____________статистика__________ -->
+      <dl class="hero__statistics statistics">
+        <dt class="statistics__item">16</dt>
+        <dd class="statistics__subitem">cafes</dd>
+        <dt class="statistics__item">23</dt>
+        <dd class="statistics__subitem">food trucks</dd>
+      </dl>
+    </div>
+    <!-- __________аудио для мороженки-->
+    <audio id="sound-link" preload="auto">
+      <source src="audio/ice_cream_and_cake.mp3" type="audio/mpeg" />
+      <source src="audio/ice_cream_and_cake.ogg" type="audio/ogg" />
+      <source src="audio/ice_cream_and_cake.wav" type="audio/wav" />
+    </audio>
+    <!-- __________аудио для девочки-->
+    <audio id="sound-link2" preload="auto">
+      <source src="audio/mmm_mmm_mwha.mp3" type="audio/mpeg" />
+      <source src="audio/mmm_mmm_mwha.ogg" type="audio/ogg" />
+      <source src="audio/mmm_mmm_mwha.wav" type="audio/wav" />
+    </audio>
+    <audio id="sound-link3" preload="auto">
+      <source src="audio/water.mp3" type="audio/mpeg" />
+      <source src="audio/water.ogg" type="audio/ogg" />
+      <source src="audio/water.wav" type="audio/wav" />
+    </audio>
+  </section>
+</main>
+<!-- скрипт мобильного меню -->
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script>
+<!-- скрипт аудио -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  var soundLink = $('#sound-link')[0],
+    soundLink2 = $('#sound-link2')[0],
+    soundLink3 = $('#sound-link3')[0];
+  $('.music1 img').mouseenter(function () {
+    soundLink.play();
+  });
+
+  $('.music2 img').mouseenter(function () {
+    soundLink2.play();
+  });
+
+  $('.music3 img').mouseenter(function () {
+    soundLink3.play();
+  });
+</script>
