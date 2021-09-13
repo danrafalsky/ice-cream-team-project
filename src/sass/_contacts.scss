@@ -76,7 +76,7 @@
   display: block;
   max-width: 220px;
   padding: 43px 20px;
-  margin-bottom: 20px;
+
   margin-right: auto;
   margin-left: auto;
 
@@ -91,6 +91,12 @@
   @media screen and (min-width: 1280px) {
     max-width: 330px;
     padding: 51px 43px;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -323,7 +329,6 @@
     background-color: getColor('darkbuttonHoverColor');
   }
   &--white {
-    margin-bottom: 113px;
     background-color: getColor('lightbuttonColor');
     color: getColor('accent');
 
