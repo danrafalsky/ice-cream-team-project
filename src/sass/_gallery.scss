@@ -1,0 +1,11 @@
+.gallery {
+  padding-bottom: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  background-image: linear-gradient(
+    to bottom,
+    getColor('primaryBgc') 32%,
+    getColor('secondaryBgc') 32%
+  );
+}
