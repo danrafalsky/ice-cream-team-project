@@ -1,0 +1,63 @@
+<!-- franchise -->
+<div class="backdrop backdrop--is-hidden" data-modal-franchise>
+    <div class="franchise">
+        <button type="button" class="franchise__button--close" data-modal-franchise-close>
+            <svg class="franchise__close-icon" width="14" height="14">
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+        <form class="franchise__form">
+            <b class="franchise__capture">Join us!</b>
+            <h2 class="franchise__title">Leave your details, we'll call you back</h2>
+            <ul class="franchise__list">
+                <li class="franchise__field">
+                    <label>
+                        <span class="franchise__label">Name*</span>
+                        <input class="franchise__input" type="text" name="user-name" autofocus autocomplete="off">
+                    </label>
+                </li>
+                <li class="franchise__field">
+                    <label>
+                        <span class="franchise__label">Phone number*</span>
+                        <input class="franchise__input" type="tel" name="user-tel" autocomplete="off">
+                    </label>
+                </li>
+                <li class="franchise__field">
+                    <label>
+                        <span class="franchise__label">E-mail*</span>
+                        <input class="franchise__input" type="email" name="user-email" autocomplete="off">
+                    </label>
+                </li>
+                <li class="franchise__field">
+                    <label>
+                        <span class="franchise__label">Your comment</span>
+                        <textarea class="franchise__input franchise__input--textarea" name="comment" rows="5"
+                            placeholder="Enter your message"></textarea>
+                    </label>
+                </li>
+            </ul>
+            <button class="franchise__button--send" type="button" data-modal-franchise-open>Send
+                <svg class="franchise__send-icon" width="20" height="20">
+                    <use href="./images/icons.svg#arrow-ios-right"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+    <script>
+        
+            (() => {
+                const refs = {
+                    openModalBtn: document.querySelector('[data-modal-franchise-open]'),
+                    closeModalBtn: document.querySelector('[data-modal-franchise-close]'),
+                    modal: document.querySelector('[data-modal-franchise]'),
+                };
+
+                refs.openModalBtn.addEventListener('click', toggleModal);
+                refs.closeModalBtn.addEventListener('click', toggleModal);
+
+                function toggleModal() {
+                    refs.modal.classList.toggle('backdrop--is-hidden');
+                }
+            })();
+    </script>
+</div>
