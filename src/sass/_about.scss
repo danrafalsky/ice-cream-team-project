@@ -263,6 +263,10 @@
     max-width: 700px;
   }
 
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
   &__button {
     position: absolute;
     top: 20px;
