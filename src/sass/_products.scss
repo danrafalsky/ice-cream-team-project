@@ -315,12 +315,14 @@
   left: 0;
   width: 280px;
   transform: translate(-50%, -50%);
-  padding: 0 15px;
+  padding: 0;
   opacity: 0;
   visibility: hidden;
   transition: transform 250ms linear, opacity 250ms linear;
   color: getColor('secondaryText');
+
   @media screen and (min-width: 768px) {
+    padding: 0 15px;
     width: 210px;
     left: 100%;
     font-size: 16px;
