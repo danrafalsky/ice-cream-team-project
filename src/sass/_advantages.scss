@@ -12,11 +12,9 @@
     flex-wrap: wrap;
     justify-content: start;
     margin-left: -60px;
-    margin-top: -60px;
   }
   @media screen and (min-width: 1280px) {
     margin-left: -90px;
-    margin-top: -90px;
   }
 }
 .advantages__item {
@@ -27,13 +25,11 @@
     flex-basis: calc(100% / 3 - 60px);
     max-width: 180px;
     margin-left: 60px;
-    margin-top: 60px;
   }
   @media screen and (min-width: 1280px) {
     flex-basis: calc(100% / 3 - 90px);
     max-width: 330px;
     margin-left: 90px;
-    margin-top: 90px;
   }
 
   &:not(:last-child) {
