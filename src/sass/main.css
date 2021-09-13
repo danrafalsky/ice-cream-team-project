@@ -15,7 +15,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  wid th: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -67,6 +67,7 @@ ul {
   overflow: hidden;
 }
 
+
 .header {
   position: absolute;
   width: 100%;
@@ -99,6 +100,97 @@ ul {
 }
 
 .header .nav {
+=======
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.customer-reviews {
+  padding: 40px 0px;
+}
+
+.customer-reviews__item {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.customer-reviews__img {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 30px auto;
+  border-radius: 50%;
+}
+
+.customer-reviews__content {
+  padding: 26px 66px;
+  background-color: #fafafa;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.customer-reviews__content::after {
+  content: '';
+  display: block;
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  top: 28px;
+  left: 61px;
+  z-index: 5;
+  background-image: url(../images/customer-reviews/quotes-customer-reviews.svg);
+}
+
+.customer-reviews__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.6;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  background-image: -webkit-repeating-linear-gradient(top, transparent 0px, transparent 30px, #e1e1e1 31px, transparent 31px);
+  background-image: repeating-linear-gradient(top, transparent 0px, transparent 30px, #e1e1e1 31px, transparent 31px);
+}
+
+@media screen and (min-width: 1280px) {
+  .customer-reviews__text {
+    font-size: 16px;
+  }
+}
+
+.customer-reviews__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.9;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews__name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .customer-reviews__name {
+    font-size: 20px;
+  }
+}
+
+.customer-reviews__dots {
+  display: block;
+  margin: 0 auto 18px auto;
+  position: relative;
+  background-color: #c7133e;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.darkbutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1974,7 +2066,8 @@ ul li.slick-active button {
 }
 
 .example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+ 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   background-color: #fff;
   color: #424242;
