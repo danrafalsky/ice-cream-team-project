@@ -5,7 +5,29 @@
 
   background-image: linear-gradient(
     to bottom,
-    getColor('primaryBgc') 32%,
-    getColor('secondaryBgc') 32%
+    getColor('primaryBgc') 25%,
+    getColor('secondaryBgc') 25%
   );
+
+  @media screen and (min-width: 400px) {
+    background-image: linear-gradient(
+      to bottom,
+      getColor('primaryBgc') 27%,
+      getColor('secondaryBgc') 27%
+    );
+  }
+  @media screen and (min-width: 600px) {
+    background-image: linear-gradient(
+      to bottom,
+      getColor('primaryBgc') 28%,
+      getColor('secondaryBgc') 28%
+    );
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      getColor('primaryBgc') 32%,
+      getColor('secondaryBgc') 32%
+    );
+  }
 }
