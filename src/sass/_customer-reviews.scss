@@ -2,8 +2,14 @@
   box-sizing: border-box;
 }
 .customer-reviews {
-  padding: 0px 0px 40px;
+  padding: 0px 0px 86px;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    padding: 0px 0px 119px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0px 0px 132px;
+  }
 }
 .customer-reviews__item {
   font-family: 'DM Sans', sans-serif;
