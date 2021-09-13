@@ -9,6 +9,9 @@
 
 body {
   margin: 0px;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {
