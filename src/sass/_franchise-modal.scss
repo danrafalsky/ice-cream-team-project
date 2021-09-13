@@ -1,4 +1,4 @@
-// Franchize Modal
+// franchise Modal
 .backdrop {
   position: fixed;
   top: 0;
@@ -20,7 +20,7 @@
     transform: translate(-0.5, -0.5) scale(1.1);
   }
 }
-.franchize {
+.franchise {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -119,7 +119,7 @@
   }
 }
 
-.franchize__field {
+.franchise__field {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@
     margin-bottom: 20px;
   }
 }
-.franchize__input {
+.franchise__input {
   width: 100%;
   margin: 0;
   padding: 11px;
@@ -168,7 +168,7 @@
   }
 }
 
-.franchize__button--send {
+.franchise__button--send {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -198,7 +198,7 @@
   }
 }
 
-.franchize__send-icon {
+.franchise__send-icon {
   margin-left: 10px;
   fill: getColor('secondaryText');
   stroke: getColor('secondaryText');
