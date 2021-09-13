@@ -3,7 +3,7 @@
 }
 .customer-reviews {
   padding: 0px 0px 40px;
-  width: 100vw;
+  width: 100%;
 }
 .customer-reviews__item {
   font-family: 'DM Sans', sans-serif;
@@ -24,7 +24,11 @@
   margin-right: auto;
 
   padding: 43px 50px 20px 50px;
-  width: 280px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 280px;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 47px 36px 28px 60px;
