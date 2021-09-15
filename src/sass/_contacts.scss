@@ -450,6 +450,7 @@
 .contacts-modal__button:focus,
 .contacts-modal__button:hover {
   color: getColor('additionalText');
+  cursor: pointer;
 }
 
 .contacts-modal__close {

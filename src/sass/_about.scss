@@ -276,6 +276,7 @@
     border: none;
     border-radius: 50%;
     background-color: getColor('darkbuttonColor');
+    cursor: pointer;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
