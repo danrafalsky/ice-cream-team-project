@@ -1,0 +1,37 @@
+<!-- buy -->
+<div class="backdrop backdrop--is-hidden" data-modal-buy>
+    <div class="buy">
+        <button type="button" class="buy__button--close">
+            <svg class="franchise__close-icon" width="14" height="14">
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+        <form class="buy__form">
+            <h2 class="buy__title">Thank you <br>for the attention!</h2>
+            <div class="cat" data-modal-buy-close>
+                <div class="hand">
+                    <img src="./images/hand-okay.png" width="100%">
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    <script>
+
+        (() => {
+            const refs = {
+                openModalBtn: document.querySelector('[data-modal-buy-open]'),
+                closeModalBtn: document.querySelector('[data-modal-buy-close]'),
+                modal: document.querySelector('[data-modal-buy]'),
+            };
+
+            refs.openModalBtn.addEventListener('click', toggleModal);
+            refs.closeModalBtn.addEventListener('click', toggleModal);
+
+            function toggleModal() {
+                document.body.classList.toggle("modal-open");
+                refs.modal.classList.toggle('backdrop--is-hidden');
+            }
+        })();
+    </script>
+</div>
