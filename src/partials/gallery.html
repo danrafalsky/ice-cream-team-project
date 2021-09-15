@@ -1,22 +1,40 @@
 <section class="gallery id=gallery">
 
-	<div class="container gallery_container">
+	<div class="container gallery__container">
 		<h2 class="gallery__title invisible-heading">Gallery</h2>
-		<div class="gallery__wrapper">
-			<picture>
-				<source media="(min-width:1280px)" srcset="images/gallery/gallery-desktop@3x.png 3x,
-							images/gallery/gallery-desktop@2x.png 2x,
-							images/gallery/gallery-desktop@1x.png 1x" type="image/png">
-				<source media="(min-width:768px)" srcset="images/gallery/gallery-tablet@3x.png 3x,
-							images/gallery/gallery-tablet@2x.png 2x,
-							images/gallery/gallery-tablet@1x.png 1x" type="image/png">
-				<source media="(min-width:320px)" srcset="images/gallery/gallery-mobile@3x.png 3x,
-							images/gallery/gallery-mobile@2x.png 2x,
-							images/gallery/gallery-mobile@1x.png 1x" type="image/png">
 
-				<img src="images/gallery/gallery-mobile@1x.png" alt="Gallery">
-			</picture>
+		<div class="grid">
+			<div class="grid-sizer"></div>
+			<div class="grid-item"><img class="grid-image" src="images/gallery/gallery1.jpg" alt="Ice-cream green"></div>
+			<div class="grid-item"><img class="grid-image" src="images/gallery/gallery2.jpg" alt="Ice-cream cone"></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img class="grid-image" src="images/gallery/gallery3.jpg" alt="A lot of Ice-cream"></div>
+			<div class="grid-item"><img class="grid-image" src="images/gallery/gallery4.jpg" alt="Ice-cream with fruits"></div>
+			<div class="grid-item"><img class="grid-image" src="images/gallery/gallery5.jpg" alt="Dog with Ice-cream"></div>
+			<div class="grid-item"><img class="grid-image" src="images/gallery/gallery6.jpg" alt="Ice-cream milk"></div>
+			<div class="grid-item"><img class="grid-image" src="images/gallery/gallery7.jpg" alt="Ice-cream pink"></div>
+			<div class="grid-item"><img class="grid-image" src="images/gallery/gallery8.jpg" alt="Girl with Ice-Cream"></div>
+			<div class="grid-item"><img class="grid-image" src="images/gallery/gallery9.jpg" alt="Ice-cream red"></div>
+			<div class="grid-item"><img class="grid-image" src="images/gallery/gallery10.jpg" alt="Ice-cofe"></div>
 		</div>
+
 	</div>
 
 </section>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+		
+<script>
+		var msnry = new Masonry('.grid', {
+			columnWidth: '.grid-sizer',
+			itemSelector: '.grid-item',
+			fitWidth: true,
+			horizontalOrder: true,
+			gutter: 5,
+			transitionDuration: '0.5s',
+			stagger: 10
+		});
+
+		imagesLoaded(grid).on('progress', function () {
+				// layout Masonry after each image loads
+				msnry.layout();
+			});
+</script>
